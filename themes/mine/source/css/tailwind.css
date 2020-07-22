@@ -1,0 +1,9 @@
+@tailwind base;
+
+body {
+  font-family: 'Baloo 2', sans-serif;
+}
+
+@tailwind components;
+
+@tailwind utilities;

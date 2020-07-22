@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+  <%- css('css/reset') %>
+  <%- css('css/style') %>
+</head>
+
+<body class="bg-gray-300">
+  <header>
+    <div class="container flex items-baseline py-8 mx-auto text-gray-700">
+      <div class="flex-grow text-5xl font-bold">Pliavi</div>
+      <div class="space-x-8 text-xl">
+        <a class="hover:text-gray-800 hover:underline" href="#menu1">menu 1</a>
+        <a class="hover:text-gray-800 hover:underline" href="#menu2">menu 2</a>
+        <a class="hover:text-gray-800 hover:underline" href="#menu3">menu 3</a>
+      </div>
+    </div>
+  </header>
+  <main class="container mx-auto"><%- body %></main>
+</body>
+
+</html>

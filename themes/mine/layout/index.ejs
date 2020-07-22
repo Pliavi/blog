@@ -1,0 +1,53 @@
+<section class="postGrid">
+  <!-- 
+    title, _content, source,
+    raw, slug, published,
+    date, updated, _id,
+    comments,layout,photos,link
+    site: {
+        data, excerpt, more
+    }
+   -->
+  <% page.posts.each(function(post, i){ %>
+  <% 
+    const isFirst = i === 0;
+    const cover = "https://picsum.photos/400/300" 
+  %>
+
+  <article class="post">
+
+    <a href="<%= url_for(post.slug) %>" class="post__linkImage">
+      <img src="<%= cover %>">
+    </a>
+
+    <div class="post__preview">
+      <div class="post__tags">
+        <a href="#tag" class="tag -gray">Gamedev</a>
+      </div>
+      
+      <h1 class="post__title">
+        <a href="<%= url_for(post.slug) %>">
+          Uma experiência incrível com Godot 4!
+        </a>
+      </h1>
+
+      <div class="post__excerpt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit, saepe obcaecat.
+      </div>
+
+      <div class="postInfo">
+        <div class="postInfo__wrapper">
+          <div class="postInfo__author">Vitor "Pliavi" Silvério</div>
+          <div class="postInfo__date">20 Jul. 2020</div>
+          <div class="postInfo__readtime">12 min.</div>
+        </div>
+        <div class="postInfo__authorPhoto">
+          <img src="https://picsum.photos/64/64">
+        </div>
+      </div>
+    </div>
+
+  </article>
+
+  <% }) %>
+</section>
